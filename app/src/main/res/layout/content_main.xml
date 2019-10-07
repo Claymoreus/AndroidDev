@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/txtTrWidth01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="107dp"
+            android:layout_marginLeft="107sp"
+            android:layout_marginTop="150sp"
+            android:width="75sp"
+            android:ems="10"
+            android:inputType="number|numberDecimal" />
+
+        <EditText
+            android:id="@+id/txtTrWidth02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="206dp"
+            android:layout_marginLeft="206sp"
+            android:layout_marginTop="149sp"
+            android:width="75sp"
+            android:ems="10"
+            android:inputType="number|numberDecimal" />
+
+        <TextView
+            android:id="@+id/textTranshWidth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="159sp"
+            android:text="TranshWidth" />
+
+        <TextView
+            android:id="@+id/textViewProgName"
+            android:layout_width="151sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="129dp"
+            android:layout_marginLeft="129sp"
+            android:layout_marginTop="13sp"
+            android:text="TrumpetCalc"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/textEnterParam"
+            android:layout_width="267sp"
+            android:layout_height="25sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70sp"
+            android:layout_marginTop="47sp"
+            android:layout_marginEnd="74dp"
+            android:layout_marginRight="74sp"
+            android:text="Введите заданные параметры"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/txtTrHeight01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="107dp"
+            android:layout_marginLeft="107sp"
+            android:layout_marginTop="98sp"
+            android:width="75sp"
+            android:ems="10"
+            android:inputType="number|numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/txtTrHeight02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="207dp"
+            android:layout_marginLeft="207sp"
+            android:layout_marginTop="98sp"
+            android:width="75sp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textSoilLvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="202dp"
+            android:layout_marginLeft="202dp"
+            android:layout_marginTop="307dp"
+            android:text="Soils in cm"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textSandsLvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="307dp"
+            android:layout_toEndOf="@+id/textRocksLvl"
+            android:layout_toRightOf="@+id/textRocksLvl"
+            android:text="Sands in cm"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textRocksLvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textTrumpetSquare"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:text="Rocks in cm"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textTranshHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="109sp"
+            android:text="TranshHeight" />
+
+        <TextView
+            android:id="@+id/textSartFinish"
+            android:layout_width="245sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80sp"
+            android:layout_marginTop="77sp"
+            android:text="Значения в начале и конце участка" />
+
+        <EditText
+            android:id="@+id/txtTrLenght"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="202sp"
+            android:layout_toEndOf="@+id/textTranshLenght"
+            android:layout_toRightOf="@+id/textTranshLenght"
+            android:width="75sp"
+            android:ems="10"
+            android:inputType="number|numberDecimal" />
+
+        <TextView
+            android:id="@+id/textTranshLenght"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="210sp"
+            android:text="TranshLenght" />
+
+        <TextView
+            android:id="@+id/lblOutput2"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="39dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginBottom="63sp"
+            android:text="Enter and press Next"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/lblOutput3"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginBottom="31sp"
+            android:text="Enter and press Next"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/lblOutput"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginBottom="121sp"
+            android:text="Enter and press Next"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/lblOutput1"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginBottom="92sp"
+            android:text="Volume of shields"
+            android:textAllCaps="false" />
+
+        <CheckBox
+            android:id="@+id/trumpetCheckBox"
+            android:layout_width="109dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="204dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:text="Trumpet " />
+
+        <CheckBox
+            android:id="@+id/transhBackFill"
+            android:layout_width="109dp"
+            android:layout_height="45dp"
+            android:layout_alignTop="@+id/trumpetCheckBox"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:text="Backfilling" />
+
+        <CheckBox
+            android:id="@+id/squareCheckBox"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRocksLvl"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="17dp"
+            android:text="DONT TOUCH!" />
+
+        <Button
+            android:id="@+id/btnCalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="393dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:text="New Calc!"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="392dp"
+            android:layout_marginEnd="160dp"
+            android:layout_marginRight="160dp"
+            android:text="Next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/txtTrumpetSquare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="251dp"
+            android:layout_toEndOf="@+id/textTrumpetSquare"
+            android:layout_toRightOf="@+id/textTrumpetSquare"
+            android:width="75sp"
+            android:ems="10"
+            android:inputType="number|numberDecimal"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textTrumpetSquare"
+            android:layout_width="83dp"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="255dp"
+            android:text="TrumpetS in m2"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/txtSoilsLvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="335sp"
+            android:layout_toEndOf="@+id/txtSandsLvl"
+            android:layout_toRightOf="@+id/txtSandsLvl"
+            android:width="75sp"
+            android:ems="10"
+            android:inputType="number"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/txtRocksLvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="335sp"
+            android:width="75sp"
+            android:ems="10"
+            android:inputType="number"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/txtSandsLvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="335sp"
+            android:layout_toEndOf="@+id/txtRocksLvl"
+            android:layout_toRightOf="@+id/txtRocksLvl"
+            android:width="75sp"
+            android:ems="10"
+            android:inputType="number"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginBottom="247dp"
+            android:text="Button" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
